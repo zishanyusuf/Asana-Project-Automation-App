@@ -1,7 +1,9 @@
 import pandas as pd
+import numpy as np
 import requests #Library for API Calls
 import streamlit as st
 import io
+import xlsxwriter
 
 #Render Title of the Web Page
 st.write("""
@@ -70,26 +72,24 @@ if st.button("Connect to ASANA", help="Click to establish the API connections!")
         st.success(f"The API connection was successful")
         asana_project_data = process_data(tasks)
         st.write(asana_project_data)
+
+        #Begin preparing for excel data download
+        asana_project_excel_data = pd.DataFrame(asana_project_data)
+        # if st.button("Prepare Excel File1"):
+            # Convert the DataFrame to an in-memory Excel file
+        excel_file = io.BytesIO()
+        with pd.ExcelWriter(excel_file, engine='xlsxwriter') as writer:
+            asana_project_excel_data.to_excel(writer, index=False, sheet_name='Sheet1')
+            
+        # Set the download button attributes
+        st.download_button(
+                label="Download Excel HERE1",
+                data=excel_file.getvalue(),
+                file_name="OP_2025_NMT_Intake.xlsx",
+                mime="application/vnd.ms-excel"
+            )
+            
+        st.success("Excel file Prepared successfully!")
+                        
     else:
         st.error(f"Failed to make an API connection. <Status code: {response.status_code}>")
-    
-
-# Render Section to Download the Excel File and Prepare the Excel Data
-st.subheader("Download OP Intake from ASANA in Excel Format")
-asana_project_excel_data = asana_project_data
-
-if st.button("Prepare Excel File"):
-    # Convert the DataFrame to an in-memory Excel file
-    excel_file = io.BytesIO()
-    with pd.ExcelWriter(excel_file, engine='xlsxwriter') as writer:
-        asana_project_excel_data.to_excel(writer, index=False, sheet_name='Sheet1')
-    
-    # Set the download button attributes
-    st.download_button(
-        label="Download Excel HERE",
-        data=excel_file.getvalue(),
-        file_name="OP_2025_NMT_Intake.xlsx",
-        mime="application/vnd.ms-excel"
-    )
-    
-    st.success("Excel file Prepared successfully!")
