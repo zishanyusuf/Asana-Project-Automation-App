@@ -57,6 +57,8 @@ def process_data(input_data):
     intake_title_data = pd.json_normalize(json_data_cleaned)[['name','permalink_url']].rename(columns={'name':'Request Heading', 'permalink_url':'Request_Link'})
     #Combine the Intake Title dataframe and Custom Field dataframe
     final_data = pd.concat([intake_title_data, custom_field_data], axis=1)
+    #Remove duplicate columns, if any
+    final_data = final_data.loc[:, ~final_data.columns.duplicated()]
         
     ##Return the final dataframe
     return final_data
