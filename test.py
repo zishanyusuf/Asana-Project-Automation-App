@@ -83,7 +83,7 @@ if st.button("Connect to ASANA", help="Click to establish the API connections!")
             
         # Set the download button attributes
         st.download_button(
-                label="Download Excel HERE1",
+                label="Download Excel HERE",
                 data=excel_file.getvalue(),
                 file_name="OP_2025_NMT_Intake.xlsx",
                 mime="application/vnd.ms-excel"
