@@ -1,7 +1,11 @@
 ### Introduction ###
-This is an App to access ASANA Project Data to enable:
+This is an APP to access ASANA Project Data to drive Project Management automation with Python with interactive customized web user interactions. APP can be used in following manner.
 * Automation for repetitive project management activities (large scale data extraction, manipulations, update etc.).
-* 
+* Leverage High level python framework for quick customized Project dashboards for leadership
+* Empowers business and Project Managers to take control of their project in their MS Office setup
+* Demonstrates the potential integration with LLM of one's own choice 
+
+### APP Detailed explanations and Use cases ###
 
 on top of it demonstrates ability to build applications with 
 
