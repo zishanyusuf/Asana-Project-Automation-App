@@ -6,12 +6,24 @@ This is an APP to access ASANA Project Data to drive Project Management automati
 * Empowers business and Project Managers to take control of their project in their MS Office setup 
 
 ### Details and Use cases ###
-The APP accesses the ASANA programatically and uses the Python to persist the response and process it to a dataframe for for further processing Streamlit is used to render the Web UI to allow users to input the Access ID and project ID to be able to exc
+The APP accesses the ASANA programatically and uses Python to persist the JSON response. JSON files is further processed with Pandas to build the required dataframe for ALL the custom fields defined by users. It is further joined by column for tasks' Name and URL. For further processing Streamlit is used to render the Web UI to allow users to input the Access ID and project ID to be able to exc
 on top of it demonstrates ability to build applications with 
 
 allows users to establish an API connection with ASANA Projects using API parameters. 
 
- 
+### FAQs ###
+**1. Does the APP extract tasks from Portfolio too?**
+The APP extracts the data from Project folder, not from the Portfolios.
+
+**2. How do i access the Project ID?**
+A typical project Browser URL for ASANA follows the following format.
+https://app.asana.com/0/12345678901112/1314151617181929
+The first ID is the Project ID: 12345678901112
+
+**2. Where do i get the Access ID?**
+If one has an access to ASANA then Access ID can be generated from ASANA by following instruction in this page: https://developers.asana.com/docs/personal-access-token
+The Access ID is Personal Access Token (PAT)
+
 
 provided using Python and Streamlit.  and showcases the potential opportunities of Project Automation using Python and ASANA. The app especially demonstrates the 
 extraction of all the custom fields created by users and it joins the default two field: name and tasks' URL.
