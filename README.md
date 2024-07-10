@@ -11,6 +11,10 @@ on top of it demonstrates ability to build applications with
 
 allows users to establish an API connection with ASANA Projects using API parameters. 
 
+### Users Interactions ###
+
+<img width="786" alt="ASANA Webhook UI" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/75984780-e3a8-45d5-87b5-e40a289194cd">
+
 ### FAQs ###
 **1. Does the APP extract tasks from Portfolio too?**
 The APP extracts the data from Project folder, not from the Portfolios.
