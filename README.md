@@ -1,9 +1,11 @@
 ### Introduction ###
-This is an APP to access ASANA Project Data to drive Project Management automation with Python. It provides users an interactive customized web user interactions with potential to augment it in fast paced business setup. APP can be used in the following manner.
-* Automation for repetitive project management activities (large scale data extraction, manipulations, update etc.).
-* Leverage High level python framework for quick customized Project dashboards for leadership
-* Demonstrates the potential integration with LLM model of one's own choice 
-* Empowers business and Project Managers to take control of their project in their MS Office setup 
+This is an application designed to seamlessly integrate with Asana's project management platform, enabling Project Managers and business leaders to streamline their operations through automation and data-driven insights. Powered by Python, this robust solution provides a user-friendly web interface, facilitating efficient interactions and customizations tailored to the fast-paced demands of modern businesses.
+
+The application's core functionality revolves around the following key features:
+1. **Automation for Repetitive Project Management Activities**: Leveraging Python's versatility, the application automates tedious and time-consuming tasks such as large-scale data extraction, manipulation, and updates. This empowers Project Managers to focus on strategic decision-making while ensuring consistent and accurate execution of routine operations.
+2. **Customized Project Dashboards for Leadership**: Harnessing the power of high-level Python frameworks, the application generates dynamic and visually appealing project dashboards. These dashboards provide a comprehensive overview of project performance, enabling leadership to make informed decisions based on real-time data insights.
+3. **Integration with Large Language Models (LLMs)**: Recognizing the potential of cutting-edge AI technologies, the application opens up possibilities of seamlessly integrate with LLMs of your choice. This integration opens up new avenues for intelligent task automation, natural language processing, and data-driven decision support, further enhancing project management capabilities.
+4. **Seamless Integration with Microsoft Office Suite**: Designed with user convenience in mind, the application seamlessly integrates with the widely adopted Microsoft Office suite. This integration ensures a familiar and intuitive experience for Project Managers and business users, minimizing the learning curve and promoting rapid adoption within existing workflows.
 
 ### Details and Use cases ###
 The APP accesses the ASANA programatically and uses Python to persist the JSON response. JSON files is further processed with Pandas to build the required dataframe for ALL the custom fields defined by users. It is further joined by column for tasks' Name and URL. For further processing Streamlit is used to render the Web UI to allow users to input the Access ID and project ID to be able to exc
