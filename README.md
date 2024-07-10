@@ -22,7 +22,7 @@ The APP extracts the data from Project folder, not from the Portfolios.
 **2. How do i access the Project ID?**
 A typical project Browser URL for ASANA follows the following format.
 https://app.asana.com/0/12345678901112/1314151617181929
-The first ID is the Project ID: 12345678901112
+The first ID is the Project ID. For example, in this toy URL the first ID is: 12345678901112
 
 **2. Where do i get the Access ID?**
 If one has an access to ASANA then Access ID can be generated from ASANA by following instruction in this page: https://developers.asana.com/docs/personal-access-token
