@@ -8,17 +8,15 @@ The application's core functionality revolves around the following key features:
 4. **Seamless Integration with Microsoft Office Suite**: Designed with user convenience in mind, the application seamlessly integrates with the widely adopted Microsoft Office suite. This integration ensures a familiar and intuitive experience for Project Managers and business users, minimizing the learning curve and promoting rapid adoption within existing workflows.
 
 ### Details and Use cases ###
-The APP accesses the ASANA programatically and uses Python to persist the JSON response. JSON files is further processed with Pandas to build the required dataframe for ALL the custom fields defined by users. It is further joined by column for tasks' Name and URL. For further processing Streamlit is used to render the Web UI to allow users to input the Access ID and project ID to be able to exc
-on top of it demonstrates ability to build applications with 
-
-allows users to establish an API connection with ASANA Projects using API parameters. 
-
+The APP accesses the ASANA programatically and uses Python to persist the JSON response. JSON files is further processed with Pandas to build the required dataframe for ALL the custom fields defined by users. It is further joined by column for tasks' Name and URL. Streamlit is used to render the Web UI to allow users to input the Access ID and project ID to be able to connect to the specific ASANA project with thier own credentials.
+ 
 ### Users Interactions ###
 
 <img width="662" alt="ASANA App UI" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/c85c1a30-beae-43f2-b48b-51354a789277">
 
 ### FAQs ###
 **1. Does the APP extract tasks from Portfolio too?**
+
 The APP extracts the data from Project folder, not from the Portfolios.
 
 **2. How do i access the Project ID?**
