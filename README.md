@@ -23,12 +23,12 @@ The APP extracts the data from Project folder, not from the Portfolios.
 A typical project Browser URL for ASANA follows the following format.
 https://app.asana.com/0/12345678901112/1314151617181929
 The first ID is the Project ID. For example, in this toy URL the first ID is: 12345678901112
-<img width="1124" alt="Screenshot 2024-07-10 at 10 15 08" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/ee796fec-5726-4f4f-8a06-4b39fe77fe3d">
+<img width="1124" alt="Screenshot 2024-07-10 at 09 24 30" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/afc46700-542f-49ee-a3cd-ac35c7b3b43e">
 
 **2. Where do i get the Access ID?**
 If one has an access to ASANA then Access ID can be generated from ASANA by following instruction in this page: https://developers.asana.com/docs/personal-access-token
 The Access ID is Personal Access Token (PAT)
-
+<img width="1124" alt="Screenshot 2024-07-10 at 10 15 08" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/ee796fec-5726-4f4f-8a06-4b39fe77fe3d">
 
 provided using Python and Streamlit.  and showcases the potential opportunities of Project Automation using Python and ASANA. The app especially demonstrates the 
 extraction of all the custom fields created by users and it joins the default two field: name and tasks' URL.
