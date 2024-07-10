@@ -1,3 +1,22 @@
+
+#Define methods to import unistalled libraries
+import importlib
+
+def install_package(package):
+    try:
+        importlib.import_module(package)
+    except ImportError:
+        import pip
+        pip.main(['install', package])
+
+# Example usage
+install_package('pandas')
+install_package('numpy')
+install_package('requests')
+install_package('streamlit')
+install_package('xlsxwriter')
+
+#Import required libraries
 import pandas as pd
 import numpy as np
 import requests #Library for API Calls
