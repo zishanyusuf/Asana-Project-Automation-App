@@ -13,7 +13,7 @@ allows users to establish an API connection with ASANA Projects using API parame
 
 ### Users Interactions ###
 
-<img width="786" alt="ASANA Webhook UI" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/75984780-e3a8-45d5-87b5-e40a289194cd">
+<img width="662" alt="ASANA App UI" src="https://github.com/zishanyusuf/Asana-Project-Automation-App/assets/24717778/c85c1a30-beae-43f2-b48b-51354a789277">
 
 ### FAQs ###
 **1. Does the APP extract tasks from Portfolio too?**
